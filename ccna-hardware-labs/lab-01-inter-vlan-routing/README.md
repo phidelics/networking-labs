@@ -21,6 +21,17 @@ Default gateways are provided by Switch Virtual Interfaces (SVIs).
 ## Topology
 ![Topology](topology.png)
 
+
+## Verification & Outcome
+
+- Inter-VLAN routing verified between STAFF, ADMIN, and GUEST VLANs
+- Extended ACL applied inbound on VLAN 30 (GUEST)
+- GUEST VLAN restricted from accessing STAFF and ADMIN VLANs
+- Authorized inter-VLAN communication preserved
+- ACL functionality confirmed using traffic tests and hit counters
+
+This lab represents a completed, secured inter-VLAN routing scenario on real Cisco enterprise hardware.
+
 ## Notes
 - Routing is performed on the switch using `ip routing`
 - MikroTik router intentionally excluded to keep the lab Cisco- and CCNA-focused
