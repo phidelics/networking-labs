@@ -24,6 +24,7 @@ Each VLAN is served by a dedicated DHCP pool on the switch. Infrastructure IP ra
 ## Notes
 - Existing inter-VLAN routing and ACLs from Lab 01 are preserved
 - DHCP functionality is validated without weakening guest access restrictions
+- During testing, it was observed that SVIs require at least one active Layer‑2 port in the VLAN to be fully reachable. A behaviour confirmed and resolved by ensuring VLAN 30 had an active access port
  
 ## Verification & Outcome
 - DHCP successfully assigns IP addresses per VLAN
