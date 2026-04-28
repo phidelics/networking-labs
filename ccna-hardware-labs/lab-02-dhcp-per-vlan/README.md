@@ -24,3 +24,10 @@ Each VLAN is served by a dedicated DHCP pool on the switch. Infrastructure IP ra
 ## Notes
 - Existing inter-VLAN routing and ACLs from Lab 01 are preserved
 - DHCP functionality is validated without weakening guest access restrictions
+- 
+## Verification & Outcome
+- DHCP successfully assigns IP addresses per VLAN
+- Default gateways delivered via SVIs
+- Inter-VLAN routing preserved
+- Guest access restrictions remain enforced
+- DHCP bindings verified on the switch
